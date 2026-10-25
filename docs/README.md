@@ -5,7 +5,7 @@ Connect an assistant to your computer. What it can do is what you allow: Files, 
 ## Connect
 
 1. On the computer, run `curl -fsSL https://bin.omegarelay.dev/install.sh | bash` and approve the computer in your browser. The app runs on Apple Silicon Macs with macOS 13 or later.
-2. Add Omega Relay in your assistant. If it asks for a URL, use `https://omegarelay.dev/mcp`.
+2. Add Omega Relay in your assistant. If it asks for a URL, use `https://api.omegarelay.dev/mcp`.
 3. When the assistant sends you to Omega Relay, sign in and choose Full access or the capabilities you want, for each computer.
 
 Two settings decide what an assistant can do. The Omega Relay app on the computer decides what that computer allows at all. The choice you make when an assistant connects decides what that assistant gets. An assistant never gets more than the computer allows.

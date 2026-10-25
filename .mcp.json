@@ -2,7 +2,7 @@
   "mcpServers": {
     "omega-remote": {
       "type": "http",
-      "url": "https://omegarelay.dev/mcp"
+      "url": "https://api.omegarelay.dev/mcp"
     }
   }
 }

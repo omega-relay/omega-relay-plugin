@@ -28,7 +28,7 @@ Terminal commands and agent tasks run with your normal user permissions. Browser
 
 This plugin holds instructions, configuration and images only. It contains no code, no hooks, no local server and no binary, and it runs nothing on your machine.
 
-Claude sends each tool call to `https://omegarelay.dev/mcp` and gets the result from there. Omega Relay passes the call to the computer you connected and returns that computer's answer, which can be file text, command output, page content, a picture of a tab or the screen, or an agent program's output. Sign-in is OAuth with PKCE at `omegarelay.dev`; the plugin holds no credential and sends data to no other service.
+Claude sends each tool call to `https://api.omegarelay.dev/mcp` and gets the result from there. Omega Relay passes the call to the computer you connected and returns that computer's answer, which can be file text, command output, page content, a picture of a tab or the screen, or an agent program's output. Sign-in is OAuth with PKCE at `omegarelay.dev`; the plugin holds no credential and sends data to no other service.
 
 Omega Relay's own activity record holds the operation's name, status, request id and time, and no arguments or results. The device platform that carries calls to your computer keeps an invoke history that can contain them. Details: [privacy](https://omegarelay.dev/privacy), [terms](https://omegarelay.dev/terms).
 

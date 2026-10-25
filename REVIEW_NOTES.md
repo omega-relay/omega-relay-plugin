@@ -10,10 +10,10 @@ Omega Relay lets an assistant work on a computer its user owns. It has three par
 
 - A desktop app the user installs on the computer. It holds the local permission and runs the capabilities.
 - A web app at `https://omegarelay.dev`, where the user signs in and decides what each assistant may do.
-- A remote MCP server at `https://omegarelay.dev/mcp`, which is what the assistant talks to.
+- A remote MCP server at `https://api.omegarelay.dev/mcp`, which is what the assistant talks to.
 
 ```text
-Assistant → omegarelay.dev/mcp (OAuth, per-assistant access) → device platform → desktop app on the user's computer
+Assistant → api.omegarelay.dev/mcp (OAuth, per-assistant access) → device platform → desktop app on the user's computer
           ← the computer's own result ←─────────────────────────────────────────
 ```
 
@@ -67,7 +67,7 @@ Testing end to end needs the desktop app running on an Apple Silicon Mac with ma
 
 The review account has one computer connected and online, set up for the cases below. Its sign-in details are in the directory's review form.
 
-1. Add the connector at `https://omegarelay.dev/mcp`, or install this plugin.
+1. Add the connector at `https://api.omegarelay.dev/mcp`, or install this plugin.
 2. When the browser opens `omegarelay.dev`, sign in with the review account's email and password.
 3. On the approval screen, keep Full access selected for the review computer and choose Allow.
 4. Run the prompts below.
@@ -78,7 +78,7 @@ The review computer is a machine used only for review. Its home folder holds a `
 
 1. Run `curl -fsSL https://bin.omegarelay.dev/install.sh | bash`.
 2. Approve the computer in the browser, signed in to any Omega Relay account, and choose Full access or the capabilities to test. Grant the macOS permissions the app lists.
-3. Add the connector at `https://omegarelay.dev/mcp` in the assistant, sign in with the same account and choose the assistant's access.
+3. Add the connector at `https://api.omegarelay.dev/mcp` in the assistant, sign in with the same account and choose the assistant's access.
 4. To remove it afterwards, remove the computer in the web app, then choose Disconnect this Mac in the desktop app.
 
 Browser also needs the Omega Relay extension for Chrome and one tab shared from its toolbar button.
